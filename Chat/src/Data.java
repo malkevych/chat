@@ -41,8 +41,9 @@ public class Data {
     		templates.put("* любов *", new ArrayList<Integer>(Arrays.asList(14, 15, 16)));
     		templates.put("* кохання *", new ArrayList<Integer>(Arrays.asList(14, 15, 16)));
     		templates.put("* секс *", new ArrayList<Integer>(Arrays.asList(14, 15, 16)));
-    		templates.put("* думаєш *", new ArrayList<Integer>(Arrays.asList(17)));
-    		templates.put("*F*", new ArrayList<Integer>(Arrays.asList(18)));
+    		templates.put("* думаєш *", new ArrayList<Integer>(Arrays.asList(17, 18)));
+    		templates.put("* живеш *", new ArrayList<Integer>(Arrays.asList(19)));
+    		templates.put("* що *", new ArrayList<Integer>(Arrays.asList(20)));
     	}
     	return templates;
     }
@@ -57,7 +58,7 @@ public class Data {
     		answers.put(4, "Ага");
     		answers.put(5, "І тобі");
     		answers.put(6, "Ти думаєш хтось вміє думати?");
-    		answers.put(7, "Прикольно, а мене Варя, ти дійсно хочеш зімною познайомитись?");
+    		answers.put(7, "Мене Варя, ти дійсно хочеш зімною познайомитись?");
     		answers.put(8, "Беге");
     		answers.put(9, "Не будь таким малослівним");
     		answers.put(10, "Шо тобі добре?");
@@ -69,12 +70,14 @@ public class Data {
     		answers.put(16, "Ти думаєш, що знаєш багато про кохання?");
     		answers.put(17, "Хто багато думає той швидко помирає?");
     		answers.put(18, "думаю");
-    		answers.put(19, "думаю");
+    		answers.put(19, "В твому серці");
     		
     		
+    		answers.put(999996, "Ти зараз про що?");
     		answers.put(999997, "Ти думаєш мені це цікаво?");
     		answers.put(999998, "Мені це не цікаво!");
     		answers.put(999999, "Слухай, давай змінемо тему?");
+    		
     		
     	}
     	return answers;
@@ -86,6 +89,7 @@ public class Data {
     	unknownIDs[0] = 999997;
     	unknownIDs[1] = 999998;
     	unknownIDs[2] = 999999;
+    	unknownIDs[3] = 999996;
     	int idx = new Random().nextInt(unknownIDs.length);
     	return unknownIDs[idx];
     	
