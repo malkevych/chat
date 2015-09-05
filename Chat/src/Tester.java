@@ -69,7 +69,8 @@ public class Tester {
 				}
 			}
 		}
-		int f=0, ad = -1;
+		int f=0,ad =-1;
+
 		 Iterator it = counts.entrySet().iterator();
 		    while (it.hasNext()) {
 		        Map.Entry pair = (Map.Entry)it.next();
