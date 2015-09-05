@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Random;
 
 
 public class Data {
@@ -69,11 +70,22 @@ public class Data {
     		
     		
     		answers.put(999997, "Ти думаєш мені це цікаво?");
-    		answers.put(999998, "Мені це не цікаво?");
+    		answers.put(999998, "Мені це не цікаво!");
     		answers.put(999999, "Слухай, давай змінемо тему?");
     		
     	}
     	return answers;
+    }
+    
+    
+    public static int getRandomUnknownMessageID() {
+    	int[] unknownIDs = new int[3];
+    	unknownIDs[0] = 999997;
+    	unknownIDs[1] = 999998;
+    	unknownIDs[2] = 999999;
+    	int idx = new Random().nextInt(unknownIDs.length);
+    	return unknownIDs[idx];
+    	
     }
     
     
