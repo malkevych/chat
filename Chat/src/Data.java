@@ -47,6 +47,9 @@ public class Data {
     		templates.put("* транспорті *", new ArrayList<Integer>(Arrays.asList(100)));
     		templates.put("* їздиш *", new ArrayList<Integer>(Arrays.asList(100,101)));
     		templates.put("* аварію *", new ArrayList<Integer>(Arrays.asList(100,101)));
+    		templates.put("? просто *", new ArrayList<Integer>(Arrays.asList(20)));
+    		templates.put("* просто *", new ArrayList<Integer>(Arrays.asList(20)));
+    		templates.put("* мешкаєш *", new ArrayList<Integer>(Arrays.asList(19)));
     	}
     	return templates;
     }
@@ -57,7 +60,7 @@ public class Data {
     		answers.put(0, "Добре, чому питаєш?");
     		answers.put(1, "Супер");
     		answers.put(2, "І тобі привіт");
-    		answers.put(3, "Привіт, нормально, а в тебе?");
+    		answers.put(3, "Привіт, як в тебе справи?");
     		answers.put(4, "Ага");
     		answers.put(5, "І тобі");
     		answers.put(6, "Ти думаєш хтось вміє думати?");
@@ -74,11 +77,16 @@ public class Data {
     		answers.put(17, "Хто багато думає той швидко помирає?");
     		answers.put(18, "думаю");
     		answers.put(19, "В твому серці");
+<<<<<<< HEAD
     		answers.put(100, "а я добираюсь на метро");
     		answers.put(101, "швидкість - це завжди небезпека!(");
     		
+=======
+    		answers.put(20, "Просто не буває");
+>>>>>>> 5208cc5e14c7e15812b0d943bf01899edeae6327
     		
     		
+    		answers.put(999995, "ясно, щось ще?");
     		answers.put(999996, "Ти зараз про що?");
     		answers.put(999997, "Ти думаєш мені це цікаво?");
     		answers.put(999998, "Мені це не цікаво!");
@@ -91,11 +99,17 @@ public class Data {
     
     
     public static int getRandomUnknownMessageID() {
+<<<<<<< HEAD
     	int[] unknownIDs = new int[4];
     	unknownIDs[0] = 999997;
+=======
+    	int[] unknownIDs = new int[5];
+    	unknownIDs[0] = 999999;
+>>>>>>> 5208cc5e14c7e15812b0d943bf01899edeae6327
     	unknownIDs[1] = 999998;
-    	unknownIDs[2] = 999999;
+    	unknownIDs[2] = 999997;
     	unknownIDs[3] = 999996;
+    	unknownIDs[4] = 999995;
     	int idx = new Random().nextInt(unknownIDs.length);
     	return unknownIDs[idx];
     	
