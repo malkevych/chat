@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Scanner;
 
 
@@ -54,23 +56,36 @@ public class Tester {
 		//ключ id відповіді, значення кільлість повторень цієї відповіді
 		HashMap<Integer, Integer> counts = new HashMap<Integer, Integer> ();
 		for(int i = 0;i<wordtemplated.length;++i){
-			ArrayList<Integer> results =(ArrayList<Integer>) Data.getInstance().getTepmaptes().get(wordtemplated[i]);
-			for(Integer g: results){
-				//якщо в counts вже є дана відповідь то збільшуємо кількість її повторень +1
-				if(counts.containsKey(g)){
-					counts.put(g, counts.get(g)+1);
-				}
-				//якщо ні то створюємо нову відповідь з лічильником 1
-				else{
-					counts.put(g, 1);
+			
+			ArrayList<Integer> results = (ArrayList<Integer>) Data.getInstance().getTepmaptes().get(wordtemplated[i]);
+			if(results!=null){
+				
+				for(Integer g: results){
+					//якщо в counts вже є дана відповідь то збільшуємо кількість її повторень +1
+					if(counts.containsKey(g)){
+						counts.put(g, counts.get(g)+1);
+					}
+					//якщо ні то створюємо нову відповідь з лічильником 1
+					else{
+						counts.put(g, 1);
+					}
 				}
 			}
 		}
-		int f=0, ad=0;
-		for(int i = 0;i<counts.size();++i){
-			if(f<counts.get(i))
-				ad = i;
-		}
+		int f=0,ad =0;
+
+		
+		
+		 Iterator it = counts.entrySet().iterator();
+		    while (it.hasNext()) {
+		        Map.Entry pair = (Map.Entry)it.next();
+		        if((int)pair.getValue()>=f){
+		        	f=(int)pair.getValue();
+		        	ad = (int) pair.getKey();
+		        }
+		    }
+		    
+		
 		return (String) Data.getInstance().getAnswers().get(ad);
 		
 	}

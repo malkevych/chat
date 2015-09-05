@@ -20,6 +20,7 @@ public class Data {
     	if(templates.isEmpty()) {
     		templates.put("* справи", new ArrayList<Integer>(Arrays.asList(0, 1, 3)));
     		templates.put("привіт *", new ArrayList<Integer>(Arrays.asList(2, 3)));
+    		templates.put("привіт", new ArrayList<Integer>(Arrays.asList(2, 3)));
     		templates.put("хай *", new ArrayList<Integer>(Arrays.asList(2)));
     		templates.put("пака", new ArrayList<Integer>(Arrays.asList(4, 5)));
     		templates.put("до побачення", new ArrayList<Integer>(Arrays.asList(4, 5)));
