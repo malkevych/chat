@@ -11,7 +11,7 @@ public class Tester {
 		
 		while (true){
 			line = scanner.nextLine();
-			String[] words = line.split(" ");
+			String[] words = line.toLowerCase().split("[^А-Яа-яІі]+");
 			String[] wordstemplated = getTemplatedWords(words);
 			
 			for(int i = 0; i<wordstemplated.length; i++) {
