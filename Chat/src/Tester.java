@@ -13,10 +13,10 @@ public class Tester {
 			line = scanner.nextLine();
 			String[] words = line.toLowerCase().split("[^А-Яа-яІі]+");
 			String[] wordstemplated = getTemplatedWords(words);
+			String answer = answer(wordstemplated);
 			
-			for(int i = 0; i<wordstemplated.length; i++) {
-				System.out.println(wordstemplated[i]);
-			}
+			System.out.println(answer);
+			
 		}
 		
 	}
@@ -49,7 +49,7 @@ public class Tester {
 		}
 	}
 	
-	private String answer(String [] wordtemplated){
+	private static String answer(String [] wordtemplated){
 		Data d= Data.getInstance();
 		//ключ id відповіді, значення кільлість повторень цієї відповіді
 		HashMap<Integer, Integer> counts = new HashMap<Integer, Integer> ();

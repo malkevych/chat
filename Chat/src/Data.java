@@ -18,29 +18,29 @@ public class Data {
     
     public static HashMap getTepmaptes() {
     	if(templates.isEmpty()) {
-    		templates.put("* справи", (ArrayList<Integer>) Arrays.asList(0, 1, 3));
-    		templates.put("привіт *", (ArrayList<Integer>) Arrays.asList(2, 3));
-    		templates.put("хай *", (ArrayList<Integer>) Arrays.asList(2));
-    		templates.put("пака", (ArrayList<Integer>) Arrays.asList(4, 5));
-    		templates.put("до побачення", (ArrayList<Integer>) Arrays.asList(4, 5));
-    		templates.put("* думаєш *", (ArrayList<Integer>) Arrays.asList(6));
-    		templates.put("* вважаєш *", (ArrayList<Integer>) Arrays.asList(6));
-    		templates.put("? звати ?", (ArrayList<Integer>) Arrays.asList(7));
-    		templates.put("мене *", (ArrayList<Integer>) Arrays.asList(7));
-    		templates.put("ага", (ArrayList<Integer>) Arrays.asList(8,9));
-    		templates.put("добре", (ArrayList<Integer>) Arrays.asList(10));
-    		templates.put("* піти *", (ArrayList<Integer>) Arrays.asList(11));
-    		templates.put("* кіно *", (ArrayList<Integer>) Arrays.asList(11, 12, 13));
-    		templates.put("* театр *", (ArrayList<Integer>) Arrays.asList(11, 12, 13));
-    		templates.put("* подивитись *", (ArrayList<Integer>) Arrays.asList(11, 12, 13));
-    		templates.put("* фільм *", (ArrayList<Integer>) Arrays.asList(11, 12, 13));
-    		templates.put("* хочеш *", (ArrayList<Integer>) Arrays.asList(13));
-    		templates.put("* бажаєш *", (ArrayList<Integer>) Arrays.asList(13));
-    		templates.put("* хотіла *", (ArrayList<Integer>) Arrays.asList(13));
-    		templates.put("* любов *", (ArrayList<Integer>) Arrays.asList(14, 15, 16));
-    		templates.put("* кохання *", (ArrayList<Integer>) Arrays.asList(14, 15, 16));
-    		templates.put("* секс *", (ArrayList<Integer>) Arrays.asList(14, 15, 16));
-    		templates.put("* думаєш *", (ArrayList<Integer>) Arrays.asList(17));
+    		templates.put("* справи", new ArrayList<Integer>(Arrays.asList(0, 1, 3)));
+    		templates.put("привіт *", new ArrayList<Integer>(Arrays.asList(2, 3)));
+    		templates.put("хай *", new ArrayList<Integer>(Arrays.asList(2)));
+    		templates.put("пака", new ArrayList<Integer>(Arrays.asList(4, 5)));
+    		templates.put("до побачення", new ArrayList<Integer>(Arrays.asList(4, 5)));
+    		templates.put("* думаєш *", new ArrayList<Integer>(Arrays.asList(6)));
+    		templates.put("* вважаєш *", new ArrayList<Integer>(Arrays.asList(6)));
+    		templates.put("? звати ?", new ArrayList<Integer>(Arrays.asList(7)));
+    		templates.put("мене *", new ArrayList<Integer>(Arrays.asList(7)));
+    		templates.put("ага", new ArrayList<Integer>(Arrays.asList(8,9)));
+    		templates.put("добре", new ArrayList<Integer>(Arrays.asList(10)));
+    		templates.put("* піти *", new ArrayList<Integer>(Arrays.asList(11)));
+    		templates.put("* кіно *", new ArrayList<Integer>(Arrays.asList(11, 12, 13)));
+    		templates.put("* театр *", new ArrayList<Integer>(Arrays.asList(11, 12, 13)));
+    		templates.put("* подивитись *", new ArrayList<Integer>(Arrays.asList(11, 12, 13)));
+    		templates.put("* фільм *", new ArrayList<Integer>(Arrays.asList(11, 12, 13)));
+    		templates.put("* хочеш *", new ArrayList<Integer>(Arrays.asList(13)));
+    		templates.put("* бажаєш *", new ArrayList<Integer>(Arrays.asList(13)));
+    		templates.put("* хотіла *", new ArrayList<Integer>(Arrays.asList(13)));
+    		templates.put("* любов *", new ArrayList<Integer>(Arrays.asList(14, 15, 16)));
+    		templates.put("* кохання *", new ArrayList<Integer>(Arrays.asList(14, 15, 16)));
+    		templates.put("* секс *", new ArrayList<Integer>(Arrays.asList(14, 15, 16)));
+    		templates.put("* думаєш *", new ArrayList<Integer>(Arrays.asList(17)));
     	}
     	return templates;
     }
