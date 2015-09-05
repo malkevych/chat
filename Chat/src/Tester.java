@@ -15,6 +15,10 @@ public class Tester {
 			line = scanner.nextLine();
 			String[] words = line.toLowerCase().split("[^А-Яа-яІі]+");
 			String[] wordstemplated = getTemplatedWords(words);
+			for (int i=0; i< wordstemplated.length; i++) {
+				System.out.println(wordstemplated[i]);
+			}
+			
 			String answer = answer(wordstemplated);
 			
 			System.out.println(answer);
@@ -68,10 +72,7 @@ public class Tester {
 				}
 			}
 		}
-		int f=0,ad =0;
-
-		
-		
+		int f=0, ad = -1;
 		 Iterator it = counts.entrySet().iterator();
 		    while (it.hasNext()) {
 		        Map.Entry pair = (Map.Entry)it.next();
@@ -80,7 +81,9 @@ public class Tester {
 		        	ad = (int) pair.getKey();
 		        }
 		    }
-		    
+		    if(ad == -1) {
+		    	ad = d.getRandomUnknownMessageID();
+		    }
 		
 		return (String) Data.getInstance().getAnswers().get(ad);
 		
