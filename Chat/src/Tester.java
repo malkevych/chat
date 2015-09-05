@@ -68,7 +68,7 @@ public class Tester {
 				}
 			}
 		}
-		int f=0,ad =0;
+		int f=0,ad =-1;
 
 		
 		

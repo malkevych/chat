@@ -44,6 +44,9 @@ public class Data {
     		templates.put("* думаєш *", new ArrayList<Integer>(Arrays.asList(17, 18)));
     		templates.put("* живеш *", new ArrayList<Integer>(Arrays.asList(19)));
     		templates.put("* що *", new ArrayList<Integer>(Arrays.asList(20)));
+    		templates.put("* транспорті *", new ArrayList<Integer>(Arrays.asList(100)));
+    		templates.put("* їздиш *", new ArrayList<Integer>(Arrays.asList(100,101)));
+    		templates.put("* аварію *", new ArrayList<Integer>(Arrays.asList(100,101)));
     	}
     	return templates;
     }
@@ -71,6 +74,9 @@ public class Data {
     		answers.put(17, "Хто багато думає той швидко помирає?");
     		answers.put(18, "думаю");
     		answers.put(19, "В твому серці");
+    		answers.put(100, "а я добираюсь на метро");
+    		answers.put(101, "швидкість - це завжди небезпека!(");
+    		
     		
     		
     		answers.put(999996, "Ти зараз про що?");
@@ -85,7 +91,7 @@ public class Data {
     
     
     public static int getRandomUnknownMessageID() {
-    	int[] unknownIDs = new int[3];
+    	int[] unknownIDs = new int[4];
     	unknownIDs[0] = 999997;
     	unknownIDs[1] = 999998;
     	unknownIDs[2] = 999999;
