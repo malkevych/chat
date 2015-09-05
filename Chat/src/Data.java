@@ -77,13 +77,9 @@ public class Data {
     		answers.put(17, "Хто багато думає той швидко помирає?");
     		answers.put(18, "думаю");
     		answers.put(19, "В твому серці");
-<<<<<<< HEAD
     		answers.put(100, "а я добираюсь на метро");
     		answers.put(101, "швидкість - це завжди небезпека!(");
-    		
-=======
     		answers.put(20, "Просто не буває");
->>>>>>> 5208cc5e14c7e15812b0d943bf01899edeae6327
     		
     		
     		answers.put(999995, "ясно, щось ще?");
@@ -99,13 +95,9 @@ public class Data {
     
     
     public static int getRandomUnknownMessageID() {
-<<<<<<< HEAD
-    	int[] unknownIDs = new int[4];
-    	unknownIDs[0] = 999997;
-=======
+
     	int[] unknownIDs = new int[5];
     	unknownIDs[0] = 999999;
->>>>>>> 5208cc5e14c7e15812b0d943bf01899edeae6327
     	unknownIDs[1] = 999998;
     	unknownIDs[2] = 999997;
     	unknownIDs[3] = 999996;
