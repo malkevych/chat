@@ -84,7 +84,9 @@ public class Tester {
 		        	ad = (int) pair.getKey();
 		        }
 		    }
-		    
+		if(f==0){
+			ad =  Data.getInstance().getRandomUnknownMessageID();
+		}
 		
 		return (String) Data.getInstance().getAnswers().get(ad);
 		

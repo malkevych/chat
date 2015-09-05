@@ -43,6 +43,7 @@ public class Data {
     		templates.put("* кохання *", new ArrayList<Integer>(Arrays.asList(14, 15, 16)));
     		templates.put("* секс *", new ArrayList<Integer>(Arrays.asList(14, 15, 16)));
     		templates.put("* думаєш *", new ArrayList<Integer>(Arrays.asList(17)));
+    		
     	}
     	return templates;
     }
