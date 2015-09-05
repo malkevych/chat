@@ -34,20 +34,16 @@ public class Tester {
 	private static String getMarkForLeftLenght(int size) {
 		if(size == 1) {
 			return "? ";
-		} else if (size > 1) {
-			return "* ";
 		} else {
-			return "";
+			return "* ";
 		}
 	}
 	
 	private static String getMarkForRightLenght(int size) {
 		if(size == 1) {
 			return " ?";
-		} else if (size > 1) {
-			return " *";
 		} else {
-			return "";
+			return " *";
 		}
 	}
 	

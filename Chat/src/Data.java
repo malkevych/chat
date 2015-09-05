@@ -21,13 +21,12 @@ public class Data {
     	if(templates.isEmpty()) {
     		templates.put("* справи", new ArrayList<Integer>(Arrays.asList(0, 1, 3)));
     		templates.put("привіт *", new ArrayList<Integer>(Arrays.asList(2, 3)));
-    		templates.put("привіт", new ArrayList<Integer>(Arrays.asList(2, 3)));
     		templates.put("хай *", new ArrayList<Integer>(Arrays.asList(2)));
     		templates.put("пака", new ArrayList<Integer>(Arrays.asList(4, 5)));
     		templates.put("до побачення", new ArrayList<Integer>(Arrays.asList(4, 5)));
     		templates.put("* думаєш *", new ArrayList<Integer>(Arrays.asList(6)));
     		templates.put("* вважаєш *", new ArrayList<Integer>(Arrays.asList(6)));
-    		templates.put("? звати ?", new ArrayList<Integer>(Arrays.asList(7)));
+    		templates.put("* звати *", new ArrayList<Integer>(Arrays.asList(7)));
     		templates.put("мене *", new ArrayList<Integer>(Arrays.asList(7)));
     		templates.put("ага", new ArrayList<Integer>(Arrays.asList(8,9)));
     		templates.put("добре", new ArrayList<Integer>(Arrays.asList(10)));
@@ -43,6 +42,7 @@ public class Data {
     		templates.put("* кохання *", new ArrayList<Integer>(Arrays.asList(14, 15, 16)));
     		templates.put("* секс *", new ArrayList<Integer>(Arrays.asList(14, 15, 16)));
     		templates.put("* думаєш *", new ArrayList<Integer>(Arrays.asList(17)));
+    		templates.put("*F*", new ArrayList<Integer>(Arrays.asList(18)));
     	}
     	return templates;
     }
@@ -68,6 +68,8 @@ public class Data {
     		answers.put(15, "Ти багато знаєш про кохання?");
     		answers.put(16, "Ти думаєш, що знаєш багато про кохання?");
     		answers.put(17, "Хто багато думає той швидко помирає?");
+    		answers.put(18, "думаю");
+    		answers.put(19, "думаю");
     		
     		
     		answers.put(999997, "Ти думаєш мені це цікаво?");
