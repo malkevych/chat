@@ -15,9 +15,6 @@ public class Tester {
 			line = scanner.nextLine();
 			String[] words = line.toLowerCase().split("[^А-Яа-яІі]+");
 			String[] wordstemplated = getTemplatedWords(words);
-			for (int i=0; i< wordstemplated.length; i++) {
-				System.out.println(wordstemplated[i]);
-			}
 			
 			String answer = answer(wordstemplated);
 			

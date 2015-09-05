@@ -19,17 +19,17 @@ public class Data {
     
     public static HashMap getTepmaptes() {
     	if(templates.isEmpty()) {
-    		templates.put("* справи", new ArrayList<Integer>(Arrays.asList(0, 1, 3)));
-    		templates.put("привіт *", new ArrayList<Integer>(Arrays.asList(2, 3)));
-    		templates.put("хай *", new ArrayList<Integer>(Arrays.asList(2)));
-    		templates.put("пака", new ArrayList<Integer>(Arrays.asList(4, 5)));
-    		templates.put("до побачення", new ArrayList<Integer>(Arrays.asList(4, 5)));
+    		templates.put("* справи *", new ArrayList<Integer>(Arrays.asList(0, 1, 3)));
+    		templates.put("* привіт *", new ArrayList<Integer>(Arrays.asList(2, 3)));
+    		templates.put("* хай *", new ArrayList<Integer>(Arrays.asList(2)));
+    		templates.put("* пака", new ArrayList<Integer>(Arrays.asList(4, 5)));
+    		templates.put("* до побачення", new ArrayList<Integer>(Arrays.asList(4, 5)));
     		templates.put("* думаєш *", new ArrayList<Integer>(Arrays.asList(6)));
     		templates.put("* вважаєш *", new ArrayList<Integer>(Arrays.asList(6)));
     		templates.put("* звати *", new ArrayList<Integer>(Arrays.asList(7)));
-    		templates.put("мене *", new ArrayList<Integer>(Arrays.asList(7)));
-    		templates.put("ага", new ArrayList<Integer>(Arrays.asList(8,9)));
-    		templates.put("добре", new ArrayList<Integer>(Arrays.asList(10)));
+    		templates.put("* мене *", new ArrayList<Integer>(Arrays.asList(7)));
+    		templates.put("* ага", new ArrayList<Integer>(Arrays.asList(8,9)));
+    		templates.put("* добре", new ArrayList<Integer>(Arrays.asList(10)));
     		templates.put("* піти *", new ArrayList<Integer>(Arrays.asList(11)));
     		templates.put("* кіно *", new ArrayList<Integer>(Arrays.asList(11, 12, 13)));
     		templates.put("* театр *", new ArrayList<Integer>(Arrays.asList(11, 12, 13)));
