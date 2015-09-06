@@ -2,15 +2,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Scanner;
 
-public class Tester {
+public class AnswerFinder {
 	public String getAnswer(String line){
 		String[] words = line.toLowerCase().split("[^А-Яа-яІі]+");
 		String[] wordstemplated = getTemplatedWords(words);
 		return answer(wordstemplated);
 	}
-	private static String[] getTemplatedWords(String[] originalWords) {
+	private String[] getTemplatedWords(String[] originalWords) {
 		String[] templatedWords = new String[originalWords.length];
 		for (int i = 0; i < originalWords.length; i++) {
 			templatedWords[i] = getMarkForLeftLenght(i) + originalWords[i] + getMarkForRightLenght(originalWords.length - 1 - i);
@@ -18,7 +17,7 @@ public class Tester {
 		return templatedWords;
 	}
 
-	private static String getMarkForLeftLenght(int size) {
+	private String getMarkForLeftLenght(int size) {
 		if (size == 1) {
 			return "? ";
 		} else {
@@ -26,7 +25,7 @@ public class Tester {
 		}
 	}
 
-	private static String getMarkForRightLenght(int size) {
+	private String getMarkForRightLenght(int size) {
 		if (size == 1) {
 			return " ?";
 		} else {
@@ -34,7 +33,7 @@ public class Tester {
 		}
 	}
 
-	private static String answer(String[] wordtemplated) {
+	private String answer(String[] wordtemplated) {
 		// ключ - id відповіді, значення - кількість повторень цієї відповіді
 		HashMap<Integer, Integer> counts = new HashMap<Integer, Integer>();
 		for (int i = 0; i < wordtemplated.length; ++i) {

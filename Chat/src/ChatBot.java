@@ -2,13 +2,12 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
-
 import java.awt.Color;
-
 import java.awt.event.KeyListener;
 import java.awt.event.KeyEvent;
+
 public class ChatBot extends JFrame implements KeyListener {
-	Tester t = new Tester();
+	AnswerFinder finder = new AnswerFinder();
 	JPanel p = new JPanel();
 	JTextArea dialog = new JTextArea(20, 50);
 	JTextArea input = new JTextArea(1, 50);
@@ -25,6 +24,7 @@ public class ChatBot extends JFrame implements KeyListener {
 		setSize(600, 400);
 		setResizable(false);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
 
 		dialog.setEditable(false);
 		input.addKeyListener(this);
@@ -43,7 +43,7 @@ public class ChatBot extends JFrame implements KeyListener {
 			String quote = input.getText();
 			input.setText("");
 			addText("-->Ви:\t" + quote);
-			addText("\n-->Варя\t" + t.getAnswer(quote) + "\n");
+			addText("\n-->Варя:\t" + finder.getAnswer(quote) + "\n");
 		}
 	}
 

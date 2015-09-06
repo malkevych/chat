@@ -16,7 +16,7 @@ public class Data {
         return SingletonHolder.HOLDER_INSTANCE;
     }
     
-    public static HashMap getTepmaptes() {
+    public static HashMap<String, ArrayList<Integer>> getTepmaptes() {
     	if(templates.isEmpty()) {
     		templates.put("* справи *", new ArrayList<Integer>(Arrays.asList(0, 1, 3)));
     		templates.put("* привіт *", new ArrayList<Integer>(Arrays.asList(2, 3)));
@@ -53,7 +53,7 @@ public class Data {
     	return templates;
     }
     
-    public static HashMap getAnswers() {
+    public static HashMap<Integer, String> getAnswers() {
     	if(answers.isEmpty()) {
     		answers.put(0, "Добре, чому питаєш?");
     		answers.put(1, "Супер");
