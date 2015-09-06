@@ -3,7 +3,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Random;
 
-
 public class Data {
 
 	private static HashMap<String, ArrayList<Integer>> templates = new HashMap<String, ArrayList<Integer>>();
@@ -54,7 +53,6 @@ public class Data {
     	return templates;
     }
     
-    
     public static HashMap getAnswers() {
     	if(answers.isEmpty()) {
     		answers.put(0, "Добре, чому питаєш?");
@@ -63,39 +61,34 @@ public class Data {
     		answers.put(3, "Привіт, як в тебе справи?");
     		answers.put(4, "Ага");
     		answers.put(5, "І тобі");
-    		answers.put(6, "Ти думаєш хтось вміє думати?");
-    		answers.put(7, "Мене Варя, ти дійсно хочеш зімною познайомитись?");
+    		answers.put(6, "Ти думаєш, хтось вміє думати?");
+    		answers.put(7, "Мене Варя, ти дійсно хочеш зі мною познайомитись?");
     		answers.put(8, "Беге");
     		answers.put(9, "Не будь таким малослівним");
-    		answers.put(10, "Шо тобі добре?");
-    		answers.put(11, "А сам ти туді не хочеш піти?");
+    		answers.put(10, "Що тобі добре?");
+    		answers.put(11, "А сам ти туди не хочеш піти?");
     		answers.put(12, "Ти такий романтичний?");
     		answers.put(13, "А ти всіх запрошуєш?");
     		answers.put(14, "Ти багато знаєш про любов?");
     		answers.put(15, "Ти багато знаєш про кохання?");
     		answers.put(16, "Ти думаєш, що знаєш багато про кохання?");
-    		answers.put(17, "Хто багато думає той швидко помирає?");
+    		answers.put(17, "Хто багато думає, той швидко помирає?");
     		answers.put(18, "думаю");
-    		answers.put(19, "В твому серці");
+    		answers.put(19, "У твоєму серці");
     		answers.put(100, "а я добираюсь на метро");
     		answers.put(101, "швидкість - це завжди небезпека!(");
-    		answers.put(20, "Просто не буває");
-    		
+    		answers.put(20, "Просто не буває");   		
     		
     		answers.put(999995, "ясно, щось ще?");
     		answers.put(999996, "Ти зараз про що?");
-    		answers.put(999997, "Ти думаєш мені це цікаво?");
+    		answers.put(999997, "Ти думаєш, мені це цікаво?");
     		answers.put(999998, "Мені це не цікаво!");
-    		answers.put(999999, "Слухай, давай змінемо тему?");
-    		
-    		
+    		answers.put(999999, "Слухай, давай змінимо тему?");	
     	}
     	return answers;
     }
-    
-    
+      
     public static int getRandomUnknownMessageID() {
-
     	int[] unknownIDs = new int[5];
     	unknownIDs[0] = 999999;
     	unknownIDs[1] = 999998;
@@ -103,10 +96,6 @@ public class Data {
     	unknownIDs[3] = 999996;
     	unknownIDs[4] = 999995;
     	int idx = new Random().nextInt(unknownIDs.length);
-    	return unknownIDs[idx];
-    	
+    	return unknownIDs[idx];	
     }
-    
-    
-	
 }
